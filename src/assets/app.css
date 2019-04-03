@@ -1,0 +1,954 @@
+/* Login.vue */
+.login-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #3a3a3a;
+}
+
+.ms-title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -230px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.ms-login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 160px;
+  margin: -150px 0 0 -190px;
+  padding: 40px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.login-btn {
+  text-align: center;
+}
+
+.login-btn button {
+  width: 100%;
+  height: 36px;
+}
+
+/* Basis.vue */
+.TopDiv {
+  background: #409EFF;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+}
+
+.MiddleDiv {
+  width: 100%;
+  height: 40px;
+}
+
+.TopSName {
+  color: #EFEFEF;
+  float: left;
+  height: 50px;
+  margin-top: 5px;
+  margin-right: 60px;
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.TopMenu {
+  float: right;
+  border: 1px solid red;
+}
+
+.TopUName {
+  color: #EFEFEF;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  margin-left: 60px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.TopImage {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.TopImageS {
+  width: 40px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+.Basis_RView {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+
+.sidebar {
+  height: 100%;
+  background: #FFFFFF;
+  /* border-top: 1px solid #273448; */
+  overflow: hidden;
+  border-right: 1px solid #EFEFEF
+}
+
+.content {
+  height: 100%;
+  float: right;
+}
+
+/* Teacher_List */
+.W95 {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.W93 {
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TopName {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.TopLine {
+  border-top: 1px solid #EFEFEF;
+}
+
+.TopButton {
+  margin: 10px auto 0;
+  height: 40px;
+}
+
+.TopButtonT {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.TopButtonLeft {
+  /*width: 100px;*/
+  float: left;
+  /*margin-left:10px;*/
+}
+
+.TopButtonLeft_1 {
+  margin-left: 10px;
+}
+
+.TopButtonRight {
+  border-radius: 4px;
+  margin-left: 100px;
+  height: 36px;
+  line-height: 36px;
+  /* border: 1px solid #CCCCCC;
+  background: #F5F5F5; */
+  position: relative;
+}
+
+.TopButtonRight2 {
+  border-radius: 4px;
+  height: 34px;
+  line-height: 34px;
+  /* border: 1px solid #CCCCCC; */
+  /* background: #F5F5F5; */
+  position: relative;
+}
+
+.TopButtonRightInput {
+  width: 160px;
+  margin-top: 5px;
+  /*height: 18px;*/
+  margin-left: 10px;
+  text-indent: 2px;
+  height: 18px;
+  line-height: 18px;
+  /*margin-left: 30px;*/
+  border-radius: 20px;
+  border: 1px solid #DBDBDB;
+  outline: none;
+  text-indent: 0.75em;
+}
+
+.TopButtonRightSearch {
+  color: #737373;
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  left: 150px;
+}
+
+.TopButtonRightSearch6 {
+  color: #737373;
+  cursor: pointer;
+  margin-left: -25px;
+}
+
+.TopButtonRight6 {
+  border-radius: 4px;
+  height: 34px;
+  /* background: #F5F5F5; */
+  position: relative;
+}
+
+.TopButtonRight5 {
+  border-radius: 4px;
+  /* margin-left: 20px; */
+  height: 34px;
+  /* border: 1px solid #CCCCCC; */
+  /* background: #F5F5F5; */
+  position: relative;
+}
+
+.TopButtonRight4 {
+  border-radius: 4px;
+  margin-left: 120px;
+  height: 40px;
+  /* border: 1px solid #CCCCCC; */
+  /* background: #F5F5F5; */
+  position: relative;
+}
+
+.TopButtonRight3 {
+  border-radius: 4px;
+  margin-left: 570px;
+  height: 34px;
+  /* border: 1px solid #CCCCCC; */
+  /* background: #F5F5F5; */
+  position: relative;
+}
+
+.TopButtonRightInput3 {
+  width: 160px;
+  margin-top: 5px;
+  height: 18px;
+  margin-left: 10px;
+  text-indent: 2px;
+}
+
+.TopButtonRightSearch3 {
+  color: #737373;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 155px;
+}
+
+.pagination {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.Teacher_List_Table {
+  height: calc(100% - 150px);
+  overflow: auto;
+}
+
+.Teacher_List_Table2 {
+  height: calc(100% - 130px);
+}
+
+.Teacher_List_Table3 {
+  height: calc(100% - 125px);
+}
+
+.CommentList_List_Table {
+  height: calc(100% - 170px);
+  overflow: auto;
+}
+
+.Paper_List_Table {
+  /*height: calc(100% - 280px); */
+  margin-bottom: 30px;
+}
+
+/* DataAndPwd.vue */
+.Left {
+  height: 100%;
+  float: left;
+  border-right: 1px solid #EFEFEF
+}
+
+.Left img {
+  width: 120px;
+  height: 120px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.Left div {
+  width: 100%;
+  height: 35px;
+}
+
+.Leftdiv {
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+.Right {
+  height: 100%;
+}
+
+/* MyData.vue */
+.MyData_Img {
+  width: 200px;
+  height: 200px;
+}
+
+.MyData_Div {
+  width: 100%;
+  height: 100%;
+}
+
+.MyData_Content {
+  width: 40%;
+  height: calc(100% - 200px);
+  padding: 20px 0;
+  /* border: 1px solid red; */
+}
+
+.FirstP_Content {
+  width: 100%;
+  height: calc(100% - 95px);
+  /* overflow: auto; */
+}
+
+.MyData_Button {
+  width: 100%;
+  height: 100px;
+}
+
+.MyData_Button button {
+  width: 100px;
+  margin-left: calc(50% - 50px);
+  margin-top: 30px;
+}
+
+/* UploadImage.vue */
+.UIfile {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 80px;
+  height: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Attachfile {
+  position: absolute;
+  top: 455px;
+  left: 140px;
+  width: 70px;
+  height: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Attachfile2 {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 70px;
+  height: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.UploadImage_Div {
+  width: 400px;
+  height: 150px;
+}
+
+.UploadImage_Div img {
+  width: 148px;
+  height: 148px;
+  float: left;
+  border: 1px solid #cdcdcd;
+}
+
+.UploadImage_Div canvas {
+  width: 146px;
+  height: 146px;
+  float: left;
+  border: 1px solid #cdcdcd;
+}
+
+.UploadImage_Div div {
+  width: 250px;
+  height: 150px;
+  float: left;
+}
+
+/* AddCarousel.vue */
+.ADDUploadImage_Div {
+  /*width: 500px;*/
+  height: 150px;
+  /* margin: 20px; */
+}
+
+.ADDUploadImage_Div img {
+  width: 248px;
+  height: 150px;
+  float: left;
+}
+
+.ADDUploadImage_Div canvas {
+  width: 248px;
+  height: 150px;
+  float: left;
+  border: 1px solid #EFEFEF;
+}
+
+.ADDUploadImage_Div div {
+  width: 230px;
+  height: 150px;
+  float: left;
+  margin-left: 15px;
+}
+
+.el-dropdown {
+  vertical-align: top;
+}
+
+.el-dropdown+.el-dropdown {
+  margin-left: 15px;
+}
+
+.el-icon-arrow-down {
+  font-size: 12px;
+}
+
+.Over {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.OverTwo {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* 用于整个项目的样式 */
+.BottomDiv {
+  width: calc(100% - 40px);
+  height: calc(100% - 100px);
+  overflow: hidden;
+  margin: 20px;
+  border: 1px solid #EFEFEF;
+  background: #FFFFFF
+}
+
+.BAll {
+  width: 100%;
+  height: 100%;
+  min-width: 1080px;
+  overflow: hidden;
+  background-color: #F5F5F5
+}
+
+.checkcolor {
+  background-color: #dfeaf6;
+}
+
+.ListBorder {
+  height: 100%;
+  border-right: 1px solid #cdcdcd;
+  float: left;
+}
+
+/*Department_List.vue*/
+.TopContent {
+  clear: both;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  height: calc(100% - 150px);
+  /*overflow: auto;*/
+}
+
+.TopContentLeft {
+  float: left;
+  width: 30%;
+  margin-right: 15px;
+  height: 100%;
+  overflow: auto;
+  border-right: 1px solid #dfe6ec;
+}
+
+.TopContentLeft ul {
+  margin: 0;
+}
+
+.TopContentLeft ul li {
+  /*height: 25px; line-height: 25px;*/
+  /*list-style: none;*/
+  /*padding-left: 25px;*/
+  /*background: url("../../static/img/folder.png") no-repeat 0 center;*/
+}
+
+.isDeptActive0 {
+  background: #20a0ff;
+  margin: 0 -20px;
+  padding-left: 20px;
+  color: #FFFFFF;
+  height: 50px;
+}
+
+.isDeptActive1 {
+  background: #20a0ff;
+  margin: 0 -45px;
+  padding-left: 45px;
+  color: #FFFFFF;
+}
+
+.isDeptActive2 {
+  background: #20a0ff;
+  margin: 0 -45px;
+  padding-left: 65px !important;
+  color: #FFFFFF;
+}
+
+.TopContentRight {
+  width: calc(70% - 35px);
+  height: calc(100% - 50px);
+  float: left;
+}
+
+.TopContentRight1 {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+
+/* .TopContentRight1 span:nth-child(2) {
+  float: right;
+} */
+
+.TopContentRight2 {
+  /*margin-top: 40px;*/
+  /*height: 500px;*/
+  height: 100%;
+}
+
+.TopContentRight3 {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  bottom: 0;
+  top: 10px;
+}
+
+.DepartmentList {
+  height: 300px;
+  overflow-x: hidden;
+}
+
+.DepartmentList ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.Department_List_Table {
+  height: calc(100% - 40px);
+  /*height: 100%;*/
+}
+
+/*AddDepartment.vue*/
+a {
+  text-decoration: none;
+}
+
+table tr {
+  height: 30px;
+  line-height: 30px;
+}
+
+.active {
+  color: rgb(64, 158, 255);
+}
+
+.Search {
+  height: 30px;
+  padding: 10px 3px;
+  border: 1px solid #cdcdcd;
+}
+
+.Search input {
+  width: calc(100% - 72px);
+  height: 22px;
+  line-height: 22px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #DBDBDB;
+  text-indent: 0.75em;
+}
+
+.Search button {
+  width: 60px;
+}
+
+.SearchLeft {
+  float: left;
+  width: 50%;
+}
+
+.SearchRight {
+  float: right;
+  width: 50%;
+}
+
+.SearchRight1 {
+  width: 20%;
+  display: inline-block;
+}
+
+.SearchRight2 {
+  width: calc(41% - 4px);
+  display: inline-block;
+}
+
+.SearchRight3 {
+  float: right;
+  width: 35%;
+}
+
+.SearchRight4 {
+  float: left;
+  width: 50%;
+  height: 26px;
+  line-height: 26px;
+}
+
+.SearchRight5 {
+  float: left;
+  width: calc(50% - 4px);
+  height: 26px;
+  line-height: 26px;
+}
+
+.SearchRight3 input {
+  width: calc(100% - 70px);
+}
+
+.SearchRight5 input {
+  width: calc(100% - 70px);
+}
+
+.SearchDept input {
+  height: 22px;
+  line-height: 22px;
+  margin-left: 30px;
+  border-radius: 20px;
+  border: 1px solid #DBDBDB;
+  outline: none;
+  text-indent: 0.75em;
+}
+
+.AddDepartment {
+  height: 400px;
+  overflow-x: hidden;
+}
+
+.MemberListLeft {
+  float: left;
+  margin-right: 0;
+  width: 50%;
+  height: 400px;
+  overflow: auto;
+  border-right: 1px solid #cdcdcd;
+}
+
+.MemberListRight {
+  float: left;
+  width: calc(50% - 1px);
+  height: 400px;
+  text-align: center;
+  overflow-x: hidden;
+  /*border-right: 1px solid #cdcdcd; */
+}
+
+.MemberListRight table {
+  width: 100%;
+}
+
+.MemberListRight table tr {
+  border-left: 1px solid #cdcdcd;
+}
+
+.MemberListRight table tr th:nth-child(1) {
+  width: 40%;
+}
+
+.MemberListRight table tr th:nth-child(2) {
+  width: 40%;
+}
+
+.MemberListRight table tr th:nth-child(3) {
+  width: calc(20% - 4px);
+}
+
+.MoreMember {
+  width: 100%;
+  text-align: center;
+}
+
+.MoreMember table {
+  width: 100%;
+}
+
+.MoreMember table tr {
+  border-left: 1px solid #cdcdcd;
+}
+
+.MoreMember table tr th:nth-child(1) {
+  width: 30%;
+}
+
+.MoreMember table tr th:nth-child(2) {
+  width: 20%;
+}
+
+.MoreMember table tr th:nth-child(3) {
+  width: 30%;
+}
+
+.MoreMember table tr th:nth-child(4) {
+  width: calc(20% - 4px);
+}
+
+/*MemberList.vue*/
+.MemberList table {
+  width: 100%;  // TagList.vue
+  text-align: center;
+}
+
+.MemberList table tr {
+  border-left: 1px solid #cdcdcd;
+}
+
+.MemberList table tr th:nth-child(1) {
+  width: 20%;
+}
+
+.MemberList table tr th:nth-child(2) {
+  width: 20%;
+}
+
+.MemberList table tr th:nth-child(3) {
+  width: 20%;
+}
+
+.MemberList table tr th:nth-child(4) {
+  width: 20%;
+}
+
+.MemberList table tr th:nth-child(4) {
+  width: calc(20% - 4px);
+}
+
+.el-collapse {
+  border: none;
+}
+
+.el-collapse-item__content {
+  padding: 0 15px !important;
+}
+
+/*AddPaper.vue*/
+.SubjectList ul {
+  padding-left: 0;
+}
+
+.SubjectList ul li {
+  height: 40px;
+  line-height: 40px;
+  list-style: none;
+  text-indent: 1em;
+}
+
+.SubjectList ul li:hover {
+  background: rgb(220, 220, 220);
+}
+
+.activeLi {
+  background-color: #409EFF;
+  color: #FFFFFF;
+}
+
+/*公共css*/
+.span409EFF {
+  color: #409EFF;
+  cursor: pointer;
+}
+
+.table_header {
+  background: rgb(220, 220, 220);
+}
+
+.like_excel {
+  width: calc(100% - 2px);
+  height: calc(100% - 1px);
+  text-align: center;
+  padding: 0;
+  border: none;
+  font-size: 14px;
+}
+
+.like_excel2 {
+  width: calc(100% - 2px);
+  font-size: 14px;
+  /*height: 30px !important;*/
+  text-align: center;
+  padding: 0;
+  border: none;
+}
+
+.no_bottom {
+  border-top: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+}
+
+.color_grey {
+  color: #cccccc;
+}
+
+.el-icon-inform {
+  background: url("../static/img/inform.png") no-repeat 0 0;
+  width: 18px;
+  height: 16px;
+  line-height: 16px;
+  position: relative;
+  bottom: -2px;
+}
+
+/*复写element-ui的css*/
+.cell {
+  text-align: center;
+}
+
+.status-clear {
+  width: 100%;
+  height: 20px;
+  background: url("../static/img/close.png") no-repeat 0 0;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.tree-menu .label-wrapper {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tree-menu .label-wrapper .has-children {
+  cursor: pointer;
+}
+
+.el-icon-arrow-right:before {
+  content: "\E602";
+}
+
+.el-tree-node__content {
+  height: 50px;
+  line-height: 50px;
+}
+
+/*.el-tree-node__content:hover { background: #20a0ff; }*/
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+  background-color: #20a0ff;
+}
+
+.el-tree-node__expand-icon {
+  border-left-width: 8px;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+}
+
+.el-menu-item-group__title {
+  padding-top: 0;
+}
+
+.el-menu {
+  background-color: #FFFFFF;
+}
+
+.el-submenu .el-menu {
+  background-color: #FFFFFF;
+}
+
+.el-menu-item, .el-submenu__title {
+  height: 50px;
+  line-height: 50px;
+}
+
+.el-form-item__error {
+  margin-left: 10px;
+}
+
+/*替换el-input默认样式问题*/
+.el-input.is-disabled .el-input__inner {
+  background-color: #FFFFFF !important;
+  border-color: #bfcbd9;
+  color: #1f2d3d;
+  cursor: auto;
+}
+
+.el-menu.el-menu--inline .el-menu-item.is-active {
+  background: rgb(64, 158, 255);
+}
+
+.el-loading-mask {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255, 1) !important;
+}
+
+.el-table .cell {
+  padding: 10px 0;
+}
+
+.el-dialog--small {
+  min-width: 550px;
+}
+
+/* .is-active { background: #20a0ff; color: #FFFFFF !important; } */
+.choose-file {
+  width: 60px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+}
